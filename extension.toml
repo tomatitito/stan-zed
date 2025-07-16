@@ -1,0 +1,7 @@
+id = "stan"
+name = "Stan"
+version = "0.0.1"
+schema_version = 1
+authors = ["Jens Kouros <jens.kouros@posteo.de>"]
+description = "Stan support for Zed"
+repository = "https://github.com/tomatitito/stan-zed.git"
