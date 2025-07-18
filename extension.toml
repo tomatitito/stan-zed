@@ -5,3 +5,11 @@ schema_version = 1
 authors = ["Jens Kouros <jens.kouros@posteo.de>"]
 description = "Stan support for Zed"
 repository = "https://github.com/tomatitito/stan-zed.git"
+
+[grammars.stan]
+repository  = "https://github.com/WardBrian/tree-sitter-stan"
+commit = "8f42a13095951700e7f9597dc309bee2c390c51f"
+
+[language_servers.stan-ls]
+name = "stan-ls"
+languages = ["Stan"]

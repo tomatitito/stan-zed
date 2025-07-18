@@ -11,9 +11,14 @@ impl zed::Extension for Stan {
 
     fn language_server_command(
         &mut self,
-        _language_server_id: &LanguageServerId,
+        language_server_id: &LanguageServerId,
         worktree: &Worktree,
     ) -> Result<Command> {
+        eprintln!(
+            "[STAN EXTENSION] language_server_command called for server: {:?}",
+            language_server_id
+        );
+
         let binary_path = worktree.which("stan-language-server");
 
         match binary_path {
